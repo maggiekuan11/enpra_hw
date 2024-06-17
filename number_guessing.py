@@ -9,7 +9,10 @@ def number_guessing():
 
     print("Guess a random 3-digit number!")
 
-    while max_guesses < current_guesses:
+    if current_guesses == max_guesses:
+        print("You've run out of guesses :( the correct number was {goal})")
+
+    else:
         guess = int(input(f"Guess {current_guesses + 1}: "))
 
         if guess < 100 or guess > 999:
