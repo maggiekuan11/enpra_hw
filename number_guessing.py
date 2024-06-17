@@ -4,10 +4,8 @@ def number_guessing():
 
     goal = random.randint(100, 999)
 
-    max_guesses = 10
+    max_guesses = 3
     current_guesses = 0
-
-    print("Guess a random 3-digit number!")
 
     if current_guesses == max_guesses:
         print("You've run out of guesses :( the correct number was {goal})")
@@ -27,4 +25,12 @@ def number_guessing():
 
             else:
                 print("The number is lower")
+            current_guesses += 1
+
+def main():
+    print("Guess a random 3-digit number!")
+    number_guessing()
+
+if __name__ == "__main__":
+    main()
 
