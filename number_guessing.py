@@ -12,11 +12,12 @@ def compare_digits(guess):
 
     for i in range(3):
         if guess_str[i] < goal_str[i]:
-            print("↑")
+            print("↑  ", end="")
         elif guess_str[i] == goal_str[i]:
-            print("=")
+            print("=  ", end="")
         else:
-            print("↓")
+            print("↓  ", end="")
+    print()
 
 def number_guessing():
 
