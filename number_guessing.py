@@ -1,23 +1,10 @@
 import random
+import hints
 
 goal = random.randint(100, 999)
 
 max_guesses = 3
 current_guesses = 0
-
-def compare_digits(guess):
-
-    goal_str = str(goal)
-    guess_str = str(guess)
-
-    for i in range(3):
-        if guess_str[i] < goal_str[i]:
-            print("↑  ", end="")
-        elif guess_str[i] == goal_str[i]:
-            print("=  ", end="")
-        else:
-            print("↓  ", end="")
-    print()
 
 def number_guessing():
 
@@ -39,23 +26,28 @@ def number_guessing():
                 if current_guesses == max_guesses:
                     print(f"You've run out of guesses :( The correct number was {goal}")
                     break
-                if guess < goal:
-                    print("The number is higher.")
-                else:
-                    print("The number is lower.")
+
+                hints.higher_lower(guess, goal)
 
                 hint2 = input("Want another hint? (y/n) ")
                 if hint2 == "y":
-                    compare_digits(guess)
+                    hints.compare_digits(guess, goal)
+
+                    hint3 = input("Want a 3rd hint? (y/n) ")
+                    if hint3 == "y":
+                        hints.even_odd(goal)
+                    elif hint3 == "n":
+                        pass
+                    else:
+                        print("Please enter 'y' or 'n'.")
+                        
                 elif hint2 == "n":
                     pass
                 else:
-                    print("Please type y or n.")
+                    print("Please enter 'y' or 'n'.")
 
         except ValueError:
             print("Invalid input. Please enter a valid 3-digit number.")
-
-        
 
 def main():
     print("Guess a random 3-digit number!")
@@ -63,4 +55,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#For the second hint: ↑ means guess higher, ↓ means guess lower, = means correct number.
 
