@@ -1,8 +1,8 @@
 def higher_lower(guess, goal):
     if guess < goal:
-        print("The goal is higher.")
+        print("正解の数字はもっと大きいです。")
     else:
-        print("The goal is lower.")
+        print("正解の数字はもっと小さいです。")
 
 def compare_digits(guess, goal):
 
@@ -20,6 +20,6 @@ def compare_digits(guess, goal):
 
 def even_odd(goal):
     if goal % 2 == 0:
-        print("The goal is even.")
+        print("正解の数字は偶数です。")
     else:
-        print("The goal is odd.")
+        print("正解の数字は奇数です。")

@@ -14,5 +14,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-#For the second hint: ↑ means guess higher, ↓ means guess lower, = means correct number.
-
