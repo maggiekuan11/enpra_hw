@@ -1,8 +1,8 @@
 def higher_lower(guess, goal):
     if guess < goal:
-        print("The number is higher.")
+        print("The goal is higher.")
     else:
-        print("The number is lower.")
+        print("The goal is lower.")
 
 def compare_digits(guess, goal):
 
@@ -20,6 +20,6 @@ def compare_digits(guess, goal):
 
 def even_odd(goal):
     if goal % 2 == 0:
-        print("The number is even.")
+        print("The goal is even.")
     else:
-        print("The number is odd.")
+        print("The goal is odd.")
