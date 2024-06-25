@@ -5,7 +5,7 @@ goal = random.randint(100, 999)
 
 max_guesses = 5
 current_guesses = 0
-max_points = 10
+max_points = (max_guesses - 1) * 2
 
 def main():
     print("Welcome to Number Guessing Game! If you are unsure of anything, please read the README.")
