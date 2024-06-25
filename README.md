@@ -17,9 +17,11 @@ The output will show you a combination of 3 signs: ↑, ↓, or =. The placement
 
 For example:
 
-\*Goal: 639
-\*Guess1: 159
-\*Hint Output: ↑ ↓ =
+- Goal: 639
+
+- Guess1: 159
+
+- Hint Output: ↑ ↓ =
 
 After this, you will be asked again if you want a 3rd hint. Please enter "y" or "n".
 
