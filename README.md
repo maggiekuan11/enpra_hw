@@ -9,6 +9,8 @@ Hello! Here is how to operate the code:
 
 **If you enter "y":**
 
+1 point will be deducted from the highest possible total.
+
 The output will show you a combination of 3 signs: ↑, ↓, or =. The placement of each sign corresponds with each digit of the number.
 
 ↑ means that you should guess higher (your guessed digit is lower than the goal)
@@ -28,6 +30,8 @@ For example:
 After this, you will be asked again if you want a 3rd hint. Please enter "y" or "n".
 
 If you enter "y":
+
+1 point will be deducted from the highest possible total.
 
 The output will tell you whether the goal is an even or odd number.
 
@@ -50,6 +54,8 @@ That is all, hope you enjoy!
 
 **「y」を入力した場合：**
 
+最高得点から 1 点減点されます。
+
 出力には、↑、↓、または = の組み合わせが表示されます。各記号の位置は数字の各桁に対応します。
 
 - ↑ は、より大きな数字を推測すべきことを意味します（推測した桁が目標より小さい場合）
@@ -69,6 +75,8 @@ That is all, hope you enjoy!
 その後、もう一つヒントが欲しいかどうか再度尋ねられます。"y" または "n" を入力してください。
 
 「y」を入力した場合：
+
+最高得点から 1 点減点されます。
 
 出力には目標が偶数か奇数かが表示されます。
 
